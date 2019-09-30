@@ -1,14 +1,14 @@
 {
-  "name": "sphinx_materialdesign_theme",
+  "name": "sphinx_symbiflow_theme",
   "version": "0.1.11",
-  "description": "[![Build Status](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme.svg?branch=master)](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme)",
+  "description": "Sphinx Symbiflow Theme",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
     "build": "npm-run-all build:parcel build:example",
-    "build:parcel": "parcel build src/js/sphinx_materialdesign_theme.js -d sphinx_materialdesign_theme/static",
+    "build:parcel": "parcel build src/js/sphinx_symbiflow_theme.js -d sphinx_symbiflow_theme/static",
     "build:example": "rimraf _build && sphinx-build -b html example _build",
     "release": "npm-run-all build:parcel release:package release:pypi",
     "release:noupload": "npm-run-all build:parcel release:package",
@@ -17,15 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myyasuda/sphinx_materialdesign_theme.git"
+    "url": "git+https://github.com/SymbiFlow/sphinx_symbiflow_theme.git"
   },
   "author": "myyasuda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/myyasuda/sphinx_materialdesign_theme/issues"
+    "url": "https://github.com/SymbiFlow/sphinx_symbiflow_theme/issues"
   },
-  "homepage": "https://github.com/myyasuda/sphinx_materialdesign_theme#readme",
+  "homepage": "https://github.com/SymbiFlow/sphinx_symbiflow_theme#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",

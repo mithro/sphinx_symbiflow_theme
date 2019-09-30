@@ -1,15 +1,13 @@
 from setuptools import setup
-from sphinx_materialdesign_theme import __version__
+from sphinx_symbiflow_theme import __version__
 
 setup(
-    name = 'sphinx_materialdesign_theme',
+    name = 'sphinx_symbiflow_theme',
     version = __version__,
-    author = 'Masahiko Yasuda',
-    author_email= 'myasuda@uchida.co.jp',
-    url="https://github.com/myyasuda/sphinx_materialdesign_theme",
-    docs_url="http://myyasuda.github.io/sphinx_materialdesign_theme/",
-    description='Sphinx Material Design Theme',
-    packages = ['sphinx_materialdesign_theme'],
+    author = 'Based on theme by Masahiko Yasuda',
+    url="https://github.com/SymbiFlow/sphinx_symbiflow_theme",
+    description='Sphinx Symbiflow Theme',
+    packages = ['sphinx_symbiflow_theme'],
     include_package_data=True,
     license= 'MIT License',
     classifiers=[
@@ -25,7 +23,7 @@ setup(
     ],
     entry_points = {
         'sphinx.html_themes': [
-            'sphinx_materialdesign_theme = sphinx_materialdesign_theme',
+            'sphinx_symbiflow_theme = sphinx_symbiflow_theme',
         ]
     }
 )

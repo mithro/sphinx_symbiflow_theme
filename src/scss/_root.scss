@@ -12,7 +12,7 @@ body {
 
 .mdl-layout__content:focus {
     outline: none;
- }
+}
 
 h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title,
 a.download > code.download {
@@ -31,19 +31,23 @@ a.download > code.download {
     text-decoration: none;
 }
 
-
 /*
  *  Figure Directive Styles
  */
- img {
-    margin: 14px 0px;
- }
- 
+img {
+    margin: 14px auto;
+    max-width: 90%;
+}
 
+.figure {
+    margin: 14px auto;
+    max-width: 90%;
+}
 
 /*
  * Download Link Styles
  */
+
 a.download > i.material-icons {
     position: relative;
     top: 5px;
@@ -52,3 +56,22 @@ a.download > i.material-icons {
 a.download {
     text-decoration: none;
 }
+
+div.section a {
+    color: rgb(103,58,183);
+}
+
+/*
+ * Basic style alignment
+ */
+
+.align-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.align-default {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+

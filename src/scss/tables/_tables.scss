@@ -3,7 +3,7 @@
         @extend .mdl-data-table;
         @extend .mdl-shadow--2dp;
 
-        margin: 14px 0px;
+        margin: 40px auto;
         table-layout: fixed;
         max-width: 100%;
 
@@ -12,5 +12,15 @@
             white-space: normal;
             overflow-wrap: break-word;
         }
+
+        th {
+            padding-top: 18px;
+            padding-bottom: 18px;
+            font-size: 1rem;
+        }
+
+        thead p {
+            margin: 0;
+        } 
     }
 }

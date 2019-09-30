@@ -1,9 +1,7 @@
-# Material Design HTML Theme for Sphinx
+# Sphinx Symbiflow Theme
 
-[![PyPI version](https://badge.fury.io/py/sphinx_materialdesign_theme.svg)](https://badge.fury.io/py/sphinx_materialdesign_theme)
-[![CircleCI](https://circleci.com/gh/myyasuda/sphinx_materialdesign_theme.svg?style=svg)](https://circleci.com/gh/myyasuda/sphinx_materialdesign_theme)
-
-[Demo Document](http://myyasuda.github.io/sphinx_materialdesign_theme)
+The Sphinx Symbiflow Theme is based on the
+[Sphinx Material Design Theme](http://github.com/myyasuda/sphinx_materialdesign_theme)
 
 ## Requirements
 
@@ -12,16 +10,16 @@
 
 ## Quick Start
 
-Install the latest version of sphinx_materialdesign_theme with `pip`.
+Install the sphinx_symbiflow_theme:
 
 ```shell
-pip install sphinx_materialdesign_theme
+python3 setup.py install
 ```
 
 Add the following line to `conf.py`.
 
 ```python
-html_theme = 'sphinx_materialdesign_theme'
+html_theme = 'sphinx_symbiflow_theme'
 ```
 
 ## Html theme options
@@ -46,7 +44,7 @@ html_theme_options = {
         ('Home', 'index', False, 'home'),
         ("ExternalLink", "http://example.com", True, 'launch'),
         ("NoIconLink", "http://example.com", True, ''),
-        ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
+        ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
     ],
 
     # Customize css colors.
@@ -81,23 +79,22 @@ html_theme_options = {
 
 ## Developer's Tips
 
-### packaging
+### Modifying the theme
+
+* Initialize repository
 
 ```
-python setup.py sdist
+make init
 ```
 
-### install
+* Make changes of the theme in `src/` directory
+
+* Build the theme
 
 ```
-pip install dist/sphinx_materialdesign_theme-${version}.tar.gz
+make
 ```
-
-### Resister PyPI
-
-```
-python setup.py register sdist upload
-```
+* Commit the changes
 
 ### Build Example's Document
 
