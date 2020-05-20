@@ -8,3 +8,5 @@ build/
 example/_build/
 node_modules/
 *.log
+sphinx_symbiflow_theme/static/sphinx_symbiflow_theme.css.map
+sphinx_symbiflow_theme/static/sphinx_symbiflow_theme.js.map
