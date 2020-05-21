@@ -8,17 +8,17 @@ Material Design Theme For Sphinx
 Quick Start
 ===========
 
-Install the latest version of sphinx_materialdesign_theme with :code:`pip`.
+Install the latest version of sphinx_symbiflow_theme with :code:`pip`.
 
 .. code-block:: bat
 
-   pip install sphinx_materialdesign_theme
+   pip install git+http://github.com/SymbiFlow/sphinx_materialdesign_theme.git@master#egg=sphinx_symbiflow_theme
 
 Add the following line to :code:`conf.py`.
 
 .. code-block:: python
 
-   html_theme = 'sphinx_materialdesign_theme'
+   html_theme = 'sphinx_symbiflow_theme'
 
 Contents
 =========
@@ -30,4 +30,3 @@ Contents
    getting-started
    examples/index
    dev/index
-   japanese/index

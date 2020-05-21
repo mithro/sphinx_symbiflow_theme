@@ -6,7 +6,7 @@ pardir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print(pardir)
 sys.path.append(pardir)
 
-from sphinx_materialdesign_theme  import __version__
+from sphinx_symbiflow_theme  import __version__
 
 source_suffix = '.rst'
 master_doc = 'index'
@@ -15,7 +15,7 @@ version = __version__
 release = __version__
 
 
-project = 'Material Design Theme'
+project = 'SymbiFlow Theme'
 copyright = '2016, Masahiko Yasuda'
 author = 'Masahiko Yasuda'
 
@@ -26,9 +26,8 @@ html_sidebars = {
    '**': ['globaltoc.html']
 }
 html_favicon = '_static/favicon.ico'
-html_logo = '_static/logo.png'
 
-html_theme = 'sphinx_materialdesign_theme'
+html_theme = 'sphinx_symbiflow_theme'
 html_theme_path = ['../']
 
 html_theme_options = {
@@ -48,7 +47,7 @@ html_theme_options = {
        ('Home', 'index', False, 'home'),
        ("ExternalLink", "http://example.com", True, 'launch'),
        ("NoIconLink", "http://example.com", True, ''),
-       ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
+       ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
     ],
 
     # Customize css colors.
@@ -57,9 +56,9 @@ html_theme_options = {
     #
     # Values: amber, blue, brown, cyan deep_orange, deep_purple, green, grey, indigo, light_blue,
     #         light_green, lime, orange, pink, purple, red, teal, yellow(Default: indigo)
-    'primary_color': 'indigo',
+    'primary_color': 'deep_purple',
     # Values: Same as primary_color. (Default: pink)
-    'accent_color': 'pink',
+    'accent_color': 'purple',
 
     # Customize layout.
     # For details see link.

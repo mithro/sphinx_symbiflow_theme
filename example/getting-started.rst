@@ -2,8 +2,8 @@
 Getting Started
 ================
 
-Instllation
-===========
+Installation
+============
 
 ------------------
 Installing Sphinx
@@ -20,7 +20,7 @@ Installing Sphinx Material Design Theme.
 
 .. code-block:: shell
 
-   pip install sphinx_materialdesign_theme
+   pip install git+http://github.com/SymbiFlow/sphinx_materialdesign_theme.git@master#egg=sphinx_symbiflow_theme
 
 
 Usage
@@ -30,7 +30,7 @@ Add the following line to :code:`conf.py`.
 
 .. code-block:: python
 
-   html_theme = 'sphinx_materialdesign_theme'
+   html_theme = 'sphinx_symbiflow_theme'
 
    # Html logo in drawer.
    # Fit in the drawer at the width of image is 240 px.
@@ -52,7 +52,7 @@ Customize menus in header
         ('Home', 'index', False, 'home'),
         ("ExternalLink", "http://example.com", True, 'launch'),
         ("NoIconLink", "http://example.com", True, ''),
-        ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
+        ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
     ]
 
 
@@ -261,7 +261,7 @@ The following is a description of the options that can be specified in ``html_th
            ('Home', 'index', False, 'home'),
            ("ExternalLink", "http://example.com", True, 'launch'),
            ("NoIconLink", "http://example.com", True, ''),
-           ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
+           ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
        ],
 
        # Customize css colors.
@@ -270,9 +270,9 @@ The following is a description of the options that can be specified in ``html_th
        #
        # Values: amber, blue, brown, cyan deep_orange, deep_purple, green, grey, indigo, light_blue,
        #         light_green, lime, orange, pink, purple, red, teal, yellow(Default: indigo)
-       'primary_color': 'indigo',
+       'primary_color': 'deep_purple',
        # Values: Same as primary_color. (Default: pink)
-       'accent_color': 'pink',
+       'accent_color': 'purple',
 
        # Customize layout.
        # For details see link.
