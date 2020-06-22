@@ -58,9 +58,12 @@ $(function() {
 
     function styleMdlCodeBlock() {
         $('pre').hover(function() {
+            console.log($(this).parent());
+            if ($(this).parent().hasClass("linenodiv")) return;
             $(this).attr('click-to-copy', 'click to copy...');
         });
         $('pre').click(function(){
+            if ($.parent().hasClass("linenodiv")) return;
             var result = copyClipboard(this);
             if (result) {
                 $(this).attr('click-to-copy', 'copied!');
