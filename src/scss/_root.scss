@@ -93,10 +93,11 @@ table.highlighttable {
 /*
  * Basic style alignment
  */
-
-.align-center {
+ .align-center {
     margin-left: auto !important;
     margin-right: auto !important;
+    display: block;
+    text-align: center;
 }
 
 .align-default {
