@@ -10,3 +10,4 @@ def get_path():
 
 def setup(app):
     app.add_html_theme('sphinx_symbiflow_theme', package_dir)
+    return {'parallel_read_safe': True, 'parallel_write_safe': True}
