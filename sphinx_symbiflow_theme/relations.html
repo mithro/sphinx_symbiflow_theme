@@ -1,3 +1,5 @@
+<div>
+{%- if prev and next %}
 <div class="pagenation">
   {%- if prev %}
      <a id="button-prev" href="{{ prev.link|e }}" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" {{ accesskey("P") }}>
@@ -17,4 +19,6 @@
         </div>
      </a>
   {%- endif %}
-  </div>
+</div>
+{%- endif %}
+</div>
