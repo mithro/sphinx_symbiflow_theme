@@ -58,9 +58,10 @@
             display: none;
         } 
         &--content {
-            position: fixed;
+            position: sticky;
             overflow-x: auto;
             overflow-y: auto;
+            top: 8%;
             width: inherit;
             &::-webkit-scrollbar {
                 width: 6px;
