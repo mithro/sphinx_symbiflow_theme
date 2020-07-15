@@ -101,9 +101,15 @@ footer.mdl-mini-footer {
         }
     }
     @media screen and (min-width: 1025px) {
-        #button-prev,
+        #button-prev {
+            padding-left: 24px;
+            width: 50%;
+            justify-content: left;
+        }
         #button-next {
-            width: 25%;
+            padding-right: 24px;
+            width: 50%;
+            justify-content: right;
         }
     
         #button-prev .pagenation-text {
