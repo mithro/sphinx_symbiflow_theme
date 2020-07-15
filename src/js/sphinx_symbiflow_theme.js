@@ -63,7 +63,7 @@ $(function() {
             $(this).attr('click-to-copy', 'click to copy...');
         });
         $('pre').click(function(){
-            if ($.parent().hasClass("linenodiv")) return;
+            if ($(this).parent().hasClass("linenodiv")) return;
             var result = copyClipboard(this);
             if (result) {
                 $(this).attr('click-to-copy', 'copied!');
