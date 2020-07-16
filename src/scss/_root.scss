@@ -62,35 +62,6 @@ div.section a {
 }
 
 /*
- * Code block with line numbers (sphinx uses table to arrange them)
-*/
-table.highlighttable {
-    margin: 0;
-    width: 100%;
-
-    td.linenos {
-        text-align: center !important;
-        width: 44px;
-        padding: 0 !important;
-
-        div > pre {
-            background: white;
-            margin: 0;
-            padding: 24px 0px !important;
-        }
-    }
-
-    td.code {
-        padding: 0 !important;
-
-        div > pre {
-            margin: 0;
-            padding: 24px;
-        }
-    }
-}
-
-/*
  * Basic style alignment
  */
  .align-center {

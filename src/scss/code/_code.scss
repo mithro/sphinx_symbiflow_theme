@@ -1,11 +1,15 @@
 .page-content {
+    .literal-block-wrapper {
+        margin: 1.5rem 0;
+    }
+
     .highlight {
         pre {
             font-family: $code_font_family;
             padding: 1rem;
-            margin: 1.5rem 0px;
             overflow: auto;
             overflow-y: hidden;
+            margin-top: 0!important;
         }
     }
     
@@ -61,4 +65,46 @@
     font-size: 85%;
     font-family: $code_font_family;
     white-space: nowrap;
+}
+
+/*
+ * Code block caption
+*/
+.code-block-caption {
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #1c313a;
+    border-radius: 4px 4px 0 0;
+    border-collapse: collapse;
+    color: white;
+}
+
+/*
+ * Code block with line numbers (sphinx uses table to arrange them)
+*/
+table.highlighttable {
+    margin: 0!important;
+    width: 100%;
+
+    td.linenos {
+        text-align: center !important;
+        width: 44px;
+        padding: 0 !important;
+
+        div > pre {
+            background: white;
+            margin: 0;
+            padding: 24px 0px !important;
+        }
+    }
+
+    td.code {
+        padding: 0 !important;
+
+        div > pre {
+            margin: 0;
+            padding: 24px;
+        }
+    }
 }
