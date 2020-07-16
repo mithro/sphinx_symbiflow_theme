@@ -78,6 +78,10 @@
     border-radius: 4px 4px 0 0;
     border-collapse: collapse;
     color: white;
+
+    &:hover .headerlink {
+        animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
+    }
 }
 
 /*
