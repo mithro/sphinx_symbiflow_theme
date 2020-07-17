@@ -95,11 +95,18 @@ table.highlighttable {
         text-align: center !important;
         width: 44px;
         padding: 0 !important;
+        vertical-align: top;
 
-        div > pre {
-            background: white;
-            margin: 0;
-            padding: 24px 0px !important;
+        div {
+            height: 100%;
+
+            pre {
+                background: white;
+                margin: 0;
+                padding: 24px 0px !important;
+
+                height: calc(100% - 48px);
+            }
         }
     }
 
