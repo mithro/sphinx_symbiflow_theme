@@ -15,7 +15,7 @@ Code Blocks
             print 'This one is not...'
             print '...but this one is.'
 
-        print 'This is a very very very very very very very very very very very very long line.'
+        print 'This is a very very very very very very very very very very very very very very very very very very very very very very very very long line.'
 
 
 .. code-block:: python
@@ -29,4 +29,4 @@ Code Blocks
        print 'This one is not...'
        print '...but this one is.'
 
-       print 'This is a very very very very very very very very very very very very long line.'
+       print 'This is a very very very very very very very very very very very very very very very very very very very very very very very very long line.'
