@@ -1,11 +1,16 @@
 .page-content {
+    .literal-block-wrapper {
+        margin: 1.5rem 0;
+    }
+
     .highlight {
+        position: relative;
         pre {
             font-family: $code_font_family;
             padding: 1rem;
-            margin: 1.5rem 0px;
             overflow: auto;
             overflow-y: hidden;
+            margin-top: 0!important;
         }
     }
     
@@ -38,10 +43,10 @@
                 content: attr(click-to-copy);
                 color: rgba(0, 0, 0, 0.5);
                 border-radius: 4px;
-                position: relative;
+                position: absolute;
                 float: right;
-                top: -0.5rem;
-                right: -0.5rem;
+                top: 0.5rem;
+                right: 0.5rem;
                 background: rgb(200, 200, 200);
                 font-size: 0.8rem;
                 cursor: pointer;
@@ -61,4 +66,57 @@
     font-size: 85%;
     font-family: $code_font_family;
     white-space: nowrap;
+}
+
+/*
+ * Code block caption
+*/
+.code-block-caption {
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #1c313a;
+    border-radius: 4px 4px 0 0;
+    border-collapse: collapse;
+    color: white;
+
+    &:hover .headerlink {
+        animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
+    }
+}
+
+/*
+ * Code block with line numbers (sphinx uses table to arrange them)
+*/
+table.highlighttable {
+    margin: 0!important;
+    width: 100%;
+
+    td.linenos {
+        text-align: center !important;
+        width: 44px;
+        padding: 0 !important;
+        vertical-align: top;
+
+        div {
+            height: 100%;
+
+            pre {
+                background: white;
+                margin: 0;
+                padding: 24px 0px !important;
+
+                height: calc(100% - 48px);
+            }
+        }
+    }
+
+    td.code {
+        padding: 0 !important;
+
+        div > pre {
+            margin: 0;
+            padding: 24px;
+        }
+    }
 }
