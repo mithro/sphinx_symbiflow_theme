@@ -62,13 +62,26 @@ $(function() {
             if ($(this).parent().hasClass("linenodiv")) return;
             $(this).attr('click-to-copy', 'click to copy...');
         });
-        $('pre').click(function(){
+        $('pre').mouseup(function(){
             if ($(this).parent().hasClass("linenodiv")) return;
+            $(this).attr('click-to-copy', 'click to copy...');
+            var selectionText = getSelectionText();
+            if (selectionText.trim().length > 0) return;
             var result = copyClipboard(this);
             if (result) {
                 $(this).attr('click-to-copy', 'copied!');
             }
         });
+    }
+    
+    function getSelectionText() {
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        return text;
     }
 
     function copyClipboard(selector) {
