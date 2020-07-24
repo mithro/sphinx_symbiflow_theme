@@ -1,7 +1,25 @@
-# Sphinx Symbiflow Theme
+# SymbiFlow's Sphinx Theme (Based on Material Design).
+
+This repository contains the [Sphinx](https://www.sphinx-doc.org/en/master/)
+ theme used
+[by SymbiFlow](https://symbiflow.github.io)
+on all its generated documentation
+([including the theme's own!](https://sphinx-symbiflow-theme.readthedocs.io/en/latest/)).
+
+You can find examples at;
+ * https://symbiflow.rtfd.io
+ * https://prjxray.rtfd.io
+ * https://skywater-pdk.rtfd.io
+ * https://workshop.fomu.im
 
 The Sphinx Symbiflow Theme is based on the
-[Sphinx Material Design Theme](http://github.com/myyasuda/sphinx_materialdesign_theme)
+[Sphinx Material Design Theme](http://github.com/myyasuda/sphinx_materialdesign_theme).
+
+## Screenshots
+
+![Purple Theme Screenshot - SymbiFlow](img/theme-purple-symbiflow.png)
+![Green Theme Screenshot - skywater-pdk](img/theme-green-skywater-pdk.png)
+![Blue Theme Screenshot - Fomu Workshop](img/theme-blue-fomu-workshop.png)
 
 ## Requirements
 
@@ -10,7 +28,7 @@ The Sphinx Symbiflow Theme is based on the
 
 ## Quick Start
 
-Install the sphinx_symbiflow_theme:
+Install the `sphinx_symbiflow_theme`:
 
 ```shell
 python3 setup.py install
