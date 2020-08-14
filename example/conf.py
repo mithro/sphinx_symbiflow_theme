@@ -16,8 +16,8 @@ release = __version__
 
 
 project = 'SymbiFlow Theme'
-copyright = '2016, Masahiko Yasuda'
-author = 'Masahiko Yasuda'
+copyright = '2020, The SymbiFlow Authors'
+author = 'The SymbiFlow Authors'
 
 language = 'en'
 
@@ -76,7 +76,10 @@ html_theme_options = {
     'show_drawer_title': True,
     # Render footer.
     # Values: True, False (Default: True)
-    'show_footer': True
+    'show_footer': True,
+
+    'hide_symbiflow_links': False,
+    'license_url': 'https://github.com/google/skywater-pdk/blob/master/LICENSE'
 }
 
 html_show_sourcelink = True

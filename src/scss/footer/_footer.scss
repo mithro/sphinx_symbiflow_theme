@@ -4,15 +4,26 @@
 footer.mdl-mini-footer {
     background-color: #212121;
     padding: 16px 32px;
+    color: #bfbfbf;
 
     > div.mdl-mini-footer__left-section {
         display: flex;
         flex-direction: column;
+        align-self: center;
         .mdl-logo {
             font-size: 1.1rem;
+            line-height: 1.5rem;
+            margin-bottom: 4px;
         }
         ul {
             @extend .mdl-mini-footer__link-list;
+            li {
+                line-height: 1.5rem;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
     > div.mdl-mini-footer__right-section {
@@ -20,12 +31,16 @@ footer.mdl-mini-footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top:12px;
+        align-self: center;
 
         a {
             color: inherit;
             font-weight: bold;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
     p.caption {
