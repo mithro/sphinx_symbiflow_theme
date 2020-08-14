@@ -77,8 +77,12 @@ html_theme_options = {
     # Values: True, False (Default: True)
     'show_footer': True,
 
-    'hide_symbiflow_links': True,
+    # Show SymbiFlow-related links in header and footer (e.g. Mailing List, IRC, Slack)
+    # Values: True, False (Default: False)
+    'hide_symbiflow_links': False,
+    # Link to GitHub repository
     'github_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme',
+    # Link to LICENSE in GitHub repository
     'license_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE'
 }
 

@@ -91,7 +91,11 @@ html_theme_options = {
     'show_drawer_title': True,
     # Render footer.
     # Values: True, False (Default: True)
-    'show_footer': True
+    'show_footer': True,
+
+    'hide_symbiflow_links': True,
+    'github_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme',
+    'license_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE'
 }
 ```
 
