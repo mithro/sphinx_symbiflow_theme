@@ -18,12 +18,22 @@
             target="_blank">Slack</a>
         </li>
         {%- endif %}
+        {%- if theme_github_url %}
+        <li>
+          <a href="{{ theme_github_url }}" target="_blank">GitHub</a>
+        </li>
+        {%- endif %}
         {%- if theme_license_url %}
         <li>
           <!-- <a href="https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE" target="_blank"><img alt="License Badge" src="https://img.shields.io/github/license/SymbiFlow/symbiflow-arch-defs"/></a> -->
           <a href="{{ theme_license_url }}" target="_blank">License</a>
         </li>
         {%- endif %}
+
+        <!-- This is to still take up space when none of the links above are shown in the footer -->
+        <li style="visibility: hidden;">
+          a
+        </li>
       </ul>
     </div>
   </div>

@@ -46,8 +46,7 @@ html_theme_options = {
     'header_links' : [
        ('Home', 'index', False, 'home'),
        ("ExternalLink", "http://example.com", True, 'launch'),
-       ("NoIconLink", "http://example.com", True, ''),
-       ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
+       ("NoIconLink", "http://example.com", True, '')
     ],
 
     # Customize css colors.
@@ -78,8 +77,9 @@ html_theme_options = {
     # Values: True, False (Default: True)
     'show_footer': True,
 
-    'hide_symbiflow_links': False,
-    'license_url': 'https://github.com/google/skywater-pdk/blob/master/LICENSE'
+    'hide_symbiflow_links': True,
+    'github_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme',
+    'license_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE'
 }
 
 html_show_sourcelink = True
