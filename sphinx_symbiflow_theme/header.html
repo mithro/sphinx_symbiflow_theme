@@ -40,6 +40,12 @@
               </a>
           {%- endif -%}
       {%- endfor %}
+      {% if theme_github_url %}
+          <a  class="mdl-navigation__link" href="{{ theme_github_url }}">
+            <i class="material-icons navigation-link-icon">code</i>
+            GitHub
+          </a>
+      {%- endif -%}
       {% if not theme_hide_symbiflow_links|tobool %}
           <a  class="mdl-navigation__link" href="https://symbiflow.github.io/">
             <i class="material-icons navigation-link-icon">web</i>

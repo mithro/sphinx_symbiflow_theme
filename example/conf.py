@@ -16,8 +16,8 @@ release = __version__
 
 
 project = 'SymbiFlow Theme'
-copyright = '2016, Masahiko Yasuda'
-author = 'Masahiko Yasuda'
+copyright = '2020, The SymbiFlow Authors'
+author = 'The SymbiFlow Authors'
 
 language = 'en'
 
@@ -46,8 +46,7 @@ html_theme_options = {
     'header_links' : [
        ('Home', 'index', False, 'home'),
        ("ExternalLink", "http://example.com", True, 'launch'),
-       ("NoIconLink", "http://example.com", True, ''),
-       ("GitHub", "https://github.com/SymbiFlow/sphinx_symbiflow_theme", True, 'link')
+       ("NoIconLink", "http://example.com", True, '')
     ],
 
     # Customize css colors.
@@ -76,7 +75,15 @@ html_theme_options = {
     'show_drawer_title': True,
     # Render footer.
     # Values: True, False (Default: True)
-    'show_footer': True
+    'show_footer': True,
+
+    # Show SymbiFlow-related links in header and footer (e.g. Mailing List, IRC, Slack)
+    # Values: True, False (Default: False)
+    'hide_symbiflow_links': False,
+    # Link to GitHub repository
+    'github_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme',
+    # Link to LICENSE in GitHub repository
+    'license_url': 'https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE'
 }
 
 html_show_sourcelink = True
