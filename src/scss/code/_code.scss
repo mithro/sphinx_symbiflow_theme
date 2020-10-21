@@ -80,7 +80,18 @@
     border-collapse: collapse;
     color: white;
 
-    &:hover .headerlink {
+    .headerlink {
+        visibility: hidden;
+        text-decoration: none;
+        &:after {
+            color: white;
+            content: "¶";
+            font-size: 1rem;
+        }
+    }
+
+    &:hover .headerlink:after {
+        visibility: visible;
         animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
     }
 }
