@@ -21,23 +21,22 @@
 }
 
 .page-content {
-    .headerlink {
-        display: inline-block;
-        text-decoration: none;
-        margin-left: 0.8rem;
-        color: inherit;
-        opacity: 0;
-        &:hover {
-            animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
-        }
-    }
-
     h1, h2, h3, h4, h5, h6 {
         .toc-backref {
             text-decoration: none;
         }
 
-        &:hover .headerlink {
+        .headerlink {
+            visibility: hidden;
+            text-decoration: none;
+            &:after {
+                content: "¶";
+                font-size: 1.5rem;
+            }
+        }
+
+        &:hover .headerlink:after {
+            visibility: visible;
             animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
         }
     }
