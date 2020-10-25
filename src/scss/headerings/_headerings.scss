@@ -29,7 +29,9 @@
         .headerlink {
             visibility: hidden;
             text-decoration: none;
+            color: inherit;
             &:after {
+                color: inherit;
                 content: "¶";
                 font-size: 1.5rem;
             }
