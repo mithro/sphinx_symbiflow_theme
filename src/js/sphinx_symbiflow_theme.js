@@ -58,7 +58,6 @@ $(function() {
 
     function styleMdlCodeBlock() {
         $('pre').hover(function() {
-            console.log($(this).parent());
             if ($(this).parent().hasClass("linenodiv")) return;
             $(this).attr('click-to-copy', 'click to copy...');
         });
@@ -73,7 +72,7 @@ $(function() {
             }
         });
     }
-    
+
     function getSelectionText() {
         var text = "";
         if (window.getSelection) {
