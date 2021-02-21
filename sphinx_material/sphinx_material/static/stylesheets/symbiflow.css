@@ -1,3 +1,15 @@
+#symbiflow-header {
+    margin-bottom: 0.4rem;
+}
+
+#symbiflow-header a>i {
+    position: relative;
+    bottom: 0.08rem;
+    vertical-align: middle;
+    padding-right: 0.2rem;
+    font-size: 1.3rem;
+}
+
 .highlight>pre:hover:before {
     padding: 0.1rem 0.5rem;
     content: attr(click-to-copy);
