@@ -802,11 +802,12 @@ html .md-footer-meta.md-typeset a:focus,html .md-footer-meta.md-typeset a:hover{
     padding:.2rem 0 .6rem
 }
 .md-footer-social__link{
-    display:inline-block;
+    display:inline;
     width:1.6rem;
     height:1.6rem;
-    font-size:.8rem;
-    text-align:center
+    font-size:.7rem;
+    text-align:center;
+    padding-right: 0.5rem;
 }
 .md-footer-social__link:before{
     line-height:1.9
@@ -2829,17 +2830,17 @@ html .md-typeset .superfences-tabs>label:hover{
     }
     .md-footer-copyright{
         max-width:75%;
-        float:left
+        float:right
     }
     [dir=rtl] .md-footer-copyright{
-        float:right
+        float:left
     }
     .md-footer-social{
         padding:.6rem 0;
-        float:right
+        float:left
     }
     [dir=rtl] .md-footer-social{
-        float:left
+        float:right
     }
 }
 @media only screen and (max-width:29.9375em){

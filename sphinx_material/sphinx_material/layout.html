@@ -158,6 +158,23 @@
     </div>
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
+        {% if not theme_hide_symbiflow_links|tobool %}
+          <div class="md-footer-social">
+            <div class="md-footer-social__link">
+              <a href="https://symbiflow.github.io/" target="_blank">SymbiFlow</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://lists.librecores.org/listinfo/symbiflow" target="_blank">Mailing List</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://webchat.freenode.net/#symbiflow" target="_blank">IRC</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://join.slack.com/t/symbiflow/shared_invite/enQtNTkyMjcyNTkzOTY4LTU0MzhmYWNjOGMyMTkyNjA0MmEyMWM5OWY3ZDg5MWQ3ODlmOWQwZjk2YzBmMDBjMzkzMzNjYjkwYjAxZTMyNjQ">Slack</a>
+            </div>
+            </ul>
+          </div>
+        {%- endif %}
         <div class="md-footer-copyright">
           {%- if show_copyright %}
           <div class="md-footer-copyright__highlight">
