@@ -158,8 +158,8 @@
     </div>
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
-        {% if not theme_hide_symbiflow_links|tobool %}
-          <div class="md-footer-social">
+        <div class="md-footer-social">
+          {% if not theme_hide_symbiflow_links|tobool %}
             <div class="md-footer-social__link">
               <a href="https://symbiflow.github.io/" target="_blank">SymbiFlow</a>
             </div>
@@ -170,11 +170,23 @@
               <a href="https://webchat.freenode.net/#symbiflow" target="_blank">IRC</a>
             </div>
             <div class="md-footer-social__link">
-              <a href="https://join.slack.com/t/symbiflow/shared_invite/enQtNTkyMjcyNTkzOTY4LTU0MzhmYWNjOGMyMTkyNjA0MmEyMWM5OWY3ZDg5MWQ3ODlmOWQwZjk2YzBmMDBjMzkzMzNjYjkwYjAxZTMyNjQ">Slack</a>
+              <a href="https://join.slack.com/t/symbiflow/shared_invite/enQtNTkyMjcyNTkzOTY4LTU0MzhmYWNjOGMyMTkyNjA0MmEyMWM5OWY3ZDg5MWQ3ODlmOWQwZjk2YzBmMDBjMzkzMzNjYjkwYjAxZTMyNjQ" target="_blank">Slack</a>
             </div>
             </ul>
-          </div>
-        {%- endif %}
+          {%- endif %}
+
+          {%- if theme_github_url %}
+            <div class="md-footer-social__link">
+              <a href="{{ theme_github_url }}" target="_blank">GitHub</a>
+            </div>
+          {%- endif %}
+          {%- if theme_license_url %}
+            <div class="md-footer-social__link">
+              <!-- <a href="https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE" target="_blank"><img alt="License Badge" src="https://img.shields.io/github/license/SymbiFlow/symbiflow-arch-defs"/></a> -->
+              <a href="{{ theme_license_url }}" target="_blank">License</a>
+            </div>
+          {%- endif %}
+        </div>
         <div class="md-footer-copyright">
           {%- if show_copyright %}
           <div class="md-footer-copyright__highlight">

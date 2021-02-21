@@ -90,7 +90,7 @@ html_theme = "sphinx_material"
 # material theme options (see theme.conf for more information)
 html_theme_options = {
     "base_url": "http://bashtage.github.io/sphinx-material/",
-    "repo_url": "https://github.com/bashtage/sphinx-material/",
+    "github_url": "https://github.com/bashtage/sphinx-material/",
     "repo_name": "Material for Sphinx",
     "google_analytics_account": "UA-XXXXX",
     "html_minify": False,

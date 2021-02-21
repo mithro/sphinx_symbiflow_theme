@@ -12,7 +12,7 @@ options are:
 
     html_theme_options = {
         'base_url': 'http://bashtage.github.io/sphinx-material/',
-        'repo_url': 'https://github.com/bashtage/sphinx-material/',
+        'github_url': 'https://github.com/bashtage/sphinx-material/',
         'repo_name': 'Material for Sphinx',
         'google_analytics_account': 'UA-XXXXX',
         'html_minify': True,
@@ -35,10 +35,10 @@ Configuration Options
    Path to a touch icon, should be 152x152 or larger.
 ``google_analytics_account``
    Set to enable google analytics.
-``repo_url``
+``github_url``
    Set the repo url for the link to appear.
 ``repo_name``
-   The name of the repo. If must be set if repo_url is set.
+   The name of the repo. If must be set if github_url is set.
 ``repo_type``
    Must be one of github, gitlab or bitbucket.
 ``base_url``
