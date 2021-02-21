@@ -99,28 +99,6 @@ Configuration Options
    A list of classes to **not strip** from tables. All other classes are stripped, and the default
    table has no class attribute. Custom table classes need to provide the full style for the table.
 
-Sidebars
-========
-You must set ``html_sidebars`` in order for the side bar to appear. There are
-four in the complete set.
-
-.. code-block:: python
-
-   html_sidebars = {
-       "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
-   }
-
-
-You can exclude any to hide a specific sidebar. For example, if this is changed to
-
-.. code-block:: python
-
-   html_sidebars = {
-       "**": ["globaltoc.html"]
-   }
-
-then only the global ToC would appear on all pages (``**`` is a glob pattern).
-
 Customizing the layout
 ======================
 
