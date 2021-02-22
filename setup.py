@@ -2,11 +2,22 @@ from setuptools import setup
 
 import versioneer
 
-with open("requirements.txt") as reqs:
-    REQUIREMENTS = [reqs.readlines()]
 
-with open("requirements-dev.txt") as dev_reqs:
-    REQUIREMENTS_DEV = [dev_reqs.readlines()]
+def get_requirements(f):
+    reqs = []
+    with open(f) as reqfile:
+        for l in reqfile.readlines():
+            if l.startswith('-'):
+                continue
+            if l.startswith('#'):
+                continue
+            reqs.append(l)
+    return reqs
+
+
+REQUIREMENTS = get_requirements("requirements.txt")
+REQUIREMENTS_DEV = get_requirements("requirements-dev.txt")
+
 
 setup(
     name="sphinx_material",
