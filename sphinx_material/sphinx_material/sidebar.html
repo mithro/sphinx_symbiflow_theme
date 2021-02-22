@@ -10,7 +10,7 @@
     <a href="{{ pathto(master_doc)|e }}"
        title="{{ docstitle|striptags|e }}">{{ theme_nav_title or shorttitle }}</a>
   </label>
-  {%- if theme_repo_url %}
+  {%- if theme_github_url %}
     <div class="md-nav__source">
       {% include "repo.html" %}
     </div>

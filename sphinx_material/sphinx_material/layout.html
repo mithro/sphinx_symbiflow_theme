@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="{{ pathto('_static/stylesheets/application.css', 1) }}"/>
   <link rel="stylesheet" href="{{ pathto('_static/stylesheets/application-palette.css', 1) }}"/>
   <link rel="stylesheet" href="{{ pathto('_static/stylesheets/application-fixes.css', 1) }}"/>
+  <link rel="stylesheet" href="{{ pathto('_static/stylesheets/symbiflow.css', 1) }}"/>
   {% block fonticon %}
   <link rel="stylesheet" href="{{ pathto('_static/fonts/material-icons.css', 1) }}"/>
   {% endblock %}
@@ -157,6 +158,35 @@
     </div>
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-social">
+          {% if not theme_hide_symbiflow_links|tobool %}
+            <div class="md-footer-social__link">
+              <a href="https://symbiflow.github.io/" target="_blank">SymbiFlow</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://lists.librecores.org/listinfo/symbiflow" target="_blank">Mailing List</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://webchat.freenode.net/#symbiflow" target="_blank">IRC</a>
+            </div>
+            <div class="md-footer-social__link">
+              <a href="https://join.slack.com/t/symbiflow/shared_invite/enQtNTkyMjcyNTkzOTY4LTU0MzhmYWNjOGMyMTkyNjA0MmEyMWM5OWY3ZDg5MWQ3ODlmOWQwZjk2YzBmMDBjMzkzMzNjYjkwYjAxZTMyNjQ" target="_blank">Slack</a>
+            </div>
+            </ul>
+          {%- endif %}
+
+          {%- if theme_github_url %}
+            <div class="md-footer-social__link">
+              <a href="{{ theme_github_url }}" target="_blank">GitHub</a>
+            </div>
+          {%- endif %}
+          {%- if theme_license_url %}
+            <div class="md-footer-social__link">
+              <!-- <a href="https://github.com/SymbiFlow/sphinx_symbiflow_theme/blob/master/LICENSE" target="_blank"><img alt="License Badge" src="https://img.shields.io/github/license/SymbiFlow/symbiflow-arch-defs"/></a> -->
+              <a href="{{ theme_license_url }}" target="_blank">License</a>
+            </div>
+          {%- endif %}
+        </div>
         <div class="md-footer-copyright">
           {%- if show_copyright %}
           <div class="md-footer-copyright__highlight">
@@ -179,7 +209,7 @@
             {% trans sphinx_version=sphinx_version|e %}Created using
             <a href="http://www.sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.
             {% endtrans %} and
-            <a href="https://github.com/bashtage/sphinx-material/">Material for
+            <a href="https://github.com/SymbiFlow/sphinx_symbiflow_theme">Material for
               Sphinx</a>
           {%- endif %}
         </div>
@@ -190,6 +220,7 @@
   </footer>
   {%- block footer_scripts %}
   <script src="{{ pathto('_static/javascripts/application.js', 1) }}"></script>
+  <script src="{{ pathto('_static/javascripts/symbiflow.js', 1) }}"></script>
   <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
   {%- endblock %}
 {%- endblock %}
