@@ -103,7 +103,7 @@ html_theme_options = {
     "color_accent": "cyan",
     "touch_icon": "images/apple-icon-152x152.png",
     "theme_color": "#2196f3",
-    "master_doc": False,
+    "master_doc": 'index',
     "nav_links": [
         {"href": "index", "internal": True, "title": "Material"},
         {
@@ -155,6 +155,8 @@ extlinks = {
 }
 
 # Enable eval_rst in markdown
+
+
 def setup(app):
     app.add_config_value(
         "recommonmark_config",
